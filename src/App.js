@@ -1,58 +1,58 @@
-import React, { Component } from 'react';
-import ReactGA from 'react-ga';
-import $ from 'jquery';
-import './App.css';
-import Header from './Components/Header';
-import Footer from './Components/Footer';
-import About from './Components/About';
-import Resume from './Components/Resume';
-import Contact from './Components/Contact';
-import Testimonials from './Components/Testimonials';
-import Portfolio from './Components/Portfolio';
+import React, { useEffect, useState } from "react";
+import axios from "axios";
 
-class App extends Component {
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import About from "./Components/About";
+import Resume from "./Components/Resume";
+import Contact from "./Components/Contact";
+import Testimonials from "./Components/Testimonials";
+import Portfolio from "./Components/Portfolio";
 
-  constructor(props){
-    super(props);
-    this.state = {
-      foo: 'bar',
-      resumeData: {}
-    };
+import Spinner from "./Components/Spinner/Spinner";
 
-  }
+const App = () => {
+  const [state, setState] = useState({ resumeData: {} });
+  const [loading, setLoading] = useState(true);
 
-  getResumeData(){
-    $.ajax({
-      url:'/resumeData.json',
-      dataType:'json',
-      cache: false,
-      success: function(data){
-        this.setState({resumeData: data});
-      }.bind(this),
-      error: function(xhr, status, err){
-        console.log(err);
-        alert(err);
+  useEffect(() => {
+    async function getResumeData() {
+      try {
+        const answer = await axios.get("/resumeData.json");
+        setState({ resumeData: answer.data });
+        // Hide spinner
+
+        setTimeout(() => {
+          if (state) setLoading(false);
+        }, 1500);
+      } catch (error) {
+        console.error(error);
       }
-    });
-  }
+    }
+    getResumeData();
+  }, []);
 
-  componentDidMount(){
-    this.getResumeData();
-  }
+  const {
+    resumeData: { main, resume, portfolio, testimonials },
+  } = state;
 
-  render() {
-    return (
-      <div className="App">
-        <Header data={this.state.resumeData.main}/>
-        <About data={this.state.resumeData.main}/>
-        <Resume data={this.state.resumeData.resume}/>
-        <Portfolio data={this.state.resumeData.portfolio}/>
-        <Testimonials data={this.state.resumeData.testimonials}/>
-        <Contact data={this.state.resumeData.main}/>
-        <Footer data={this.state.resumeData.main}/>
-      </div>
-    );
-  }
-}
+  return (
+    <div className="App">
+      {loading ? (
+        <Spinner />
+      ) : (
+        <>
+          <Header data={main} />
+          <About data={main} />
+          <Resume data={resume} />
+          <Portfolio data={portfolio} />
+          <Testimonials data={testimonials} />
+          <Contact data={main} />
+          <Footer data={main} />
+        </>
+      )}
+    </div>
+  );
+};
 
 export default App;

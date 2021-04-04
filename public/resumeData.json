@@ -1,17 +1,17 @@
 {
   "main": {
-    "name": "Sonny Sangha",
-    "occupation": "ReactJS Developer && Instructor @CleverProgrammer",
-    "description": "Full Stack React Developer by Day, Founder && Freelancer by Night. #papaReact",
-    "image": "IG_Sonny.jpeg",
-    "bio": "My name is Sonny, I'm a Full Stack ReactJS Developer. Currently I'm working at Clever Programmer while also coaching ",
-    "contactmessage": "Get in touch with me to receive further details, get coached or anything else.",
-    "email": "sonny@cleverprogrammer.com",
-    "phone": "+44 12 345 6789",
+    "name": "Ivan Hernandez",
+    "occupation": "MERN Developer",
+    "description": "Full Stack React Developer by Day",
+    "image": "IH.jpeg",
+    "bio": "My name is Ivan, I'm a Full Stack ReactJS Developer. Currently I'm working at Nü4IT while also trying to start a career as a freelance ",
+    "contactmessage": "Get in touch with me to receive further details",
+    "email": "alejandrohernang@gmail.com",
+    "phone": "+55 69 14 6564",
     "address": {
       "street": "123 Fake Street",
-      "city": "London",
-      "state": "UK",
+      "city": "Puebla",
+      "state": "MX",
       "zip": "ABC 123"
     },
     "website": "http://www.timbakerdev.com",
@@ -19,22 +19,17 @@
     "social": [
       {
         "name": "facebook",
-        "url": "https://www.facebook.com/sonny.sangha.3",
+        "url": "https://www.facebook.com/ivan.hernandez.1671",
         "className": "fa fa-facebook"
       },
       {
         "name": "linkedin",
-        "url": "https://www.linkedin.com/in/saajansangha/",
+        "url": "https://www.linkedin.com/in/alejandro-hern%C3%A1ndez-angeles-bb3ba28b/",
         "className": "fa fa-linkedin"
       },
       {
-        "name": "instagram",
-        "url": "https://www.instagram.com/ssssangha/",
-        "className": "fa fa-instagram"
-      },
-      {
         "name": "github",
-        "url": "http://github.com/sonnysangha",
+        "url": "https://github.com/maerd19",
         "className": "fa fa-github"
       }
     ]
@@ -43,30 +38,30 @@
     "skillmessage": "Here you can create a short write-up of your skills to show off to employers",
     "education": [
       {
-        "school": "University of Kent",
-        "degree": "Masters in Advanced Computer Science",
-        "graduated": "January 2017",
+        "school": "Instituto Politecnico Nacional",
+        "degree": "Bachelor in Computer Science",
+        "graduated": "June 2014",
         "description": "Graduated with Distinction"
       }
     ],
     "work": [
       {
-        "company": "Clever Programmer",
-        "title": "Team Member && React Specialist",
-        "years": "April 2020 - Present",
-        "description": "Teaching ReactJS to thousands of students."
+        "company": "Nü4IT Automation",
+        "title": "PHP Specialist",
+        "years": "November 2017 - Present",
+        "description": "Developing solutions to improve clients performance"
       },
       {
-        "company": "Lindar Media",
-        "title": "Software Engineer",
-        "years": "Nov 2019 - April 2020",
-        "description": "Building MrQ, a gambling website."
+        "company": "Cooperativa PEMEX",
+        "title": "Collection Specialist",
+        "years": "October 2016 - October 2017",
+        "description": "Improving the Collection area"
       }
     ],
     "skills": [
       {
         "name": "ReactJs",
-        "level": "100%"
+        "level": "50%"
       },
       {
         "name": "CSS",
@@ -77,8 +72,8 @@
         "level": "60%"
       },
       {
-        "name": "Figma && Adobe XD",
-        "level": "55%"
+        "name": "PHP",
+        "level": "70%"
       },
       {
         "name": "HTML5",
@@ -86,6 +81,10 @@
       },
       {
         "name": "MongoDB",
+        "level": "80%"
+      },
+      {
+        "name": "SQL",
         "level": "80%"
       }
     ]
@@ -131,7 +130,7 @@
         "user": "Kareem Abdul Jabbar"
       },
       {
-        "text": "That Sonny Sangha must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
+        "text": "That Ivan Hernandez must be one of the most brilliant developers I've ever met! It is amazing that nobody has hired him yet. Hey you, you should hire this guy, he may be fresh out of University and have zero on the job experience but I am confident that he will be one of your best developers in no time!",
         "user": "Steve Wozniak... impersonator"
       }
     ]
